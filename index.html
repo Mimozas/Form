@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <h5>Please Fill out this form with the required info</h5>
+    </div>
+
+    <div  class="center">
+        <form>
+            <label for="fname">Enter your First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Enter your Last name:</label><br>
+            <input type="text" id="lname" name="lname">
+            <label for="fname">Enter your Email:</label><br>
+            <input type="text" id="ename" name="ename"><br>
+          </form>
+    </div>
+    <div class="border"></div>
+    <div class="center">
+        <form style="line-height: 2em;">
+          <input type="radio" id="html" name="accType" value="Personal">
+          <label for="Personal">Personal Account</label><br>
+          <input type="radio" id="css" name="accType" value="Buisness">
+          <label for="Buisness">Buisness Account</label><br>
+          <input type="checkbox" id="Terms" name="Terms" value="Possitive">
+          <label for="Terms"> I accept the <u>Terms and conditions</label><br>
+        </form>
+    </div>
+    <div class="border"></div>
+    <div class="center">
+      <form action="/action_page.php" style="position: relative; top: 60px; line-height: 2em;">
+        <label for="pic">Upload a profile picture:</label><br>
+        <input type="file" id="myFile" name="filename">
+        <input type="submit"><br>
+        <label for="fname">Input your age(years):</label><br>
+        <input type="text" id="age" name="age"><br>
+
+        <label for="about">How did you hear about us:</label>
+        <select name="Aboutus" id="ab" form="form">
+          <option value="a">a</option>
+          <option value="b">b</option>
+          <option value="c">c</option>
+          <option value="d">d</option>
+        </select>
+        <div class="row">
+        <label for="bio">Provide a bio:</label><br>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="width: 100%; background-color: #0a0a22;"></textarea>        
+        </div>
+        
+        <div>
+          <button class="button">Button</button>
+        </div>
+      </form>
+      </div>
+      
+
+</body>
+</html>
